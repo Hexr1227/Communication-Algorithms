@@ -1,4 +1,4 @@
-"""Public acceptance tests. No reference implementation is included."""
+"""公开验收测试，不包含参考实现。"""
 import unittest
 from student import advance_queue
 
@@ -55,8 +55,8 @@ class QueueAcceptance(unittest.TestCase):
                         self.assertLessEqual(sent, c)
                         self.assertGreaterEqual(after, 0)
                         self.assertEqual(q + a, sent + after)
-                        # Work-conserving: service leaves either no old data
-                        # or no unused capacity. New arrivals are excluded.
+                        # 有数据且有容量时应继续服务：服务结束后，要么旧数据已发完，
+                        # 要么容量已用尽。本时隙末的新到达不参与本次服务。
                         self.assertTrue(sent == q or sent == c)
 
     def test_new_arrivals_cannot_change_current_service(self):
@@ -66,3 +66,4 @@ class QueueAcceptance(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
+

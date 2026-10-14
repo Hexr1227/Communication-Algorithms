@@ -1,0 +1,263 @@
+test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) ... 
+  test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=1) ... ERROR
+  test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=2) ... ERROR
+  test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=3) ... ERROR
+  test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=4) ... ERROR
+  test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=5) ... ERROR
+test_empty (__main__.FifoAcceptance.test_empty) ... ERROR
+test_fifo_does_not_overtake_large_packet (__main__.FifoAcceptance.test_fifo_does_not_overtake_large_packet) ... ERROR
+test_idle_and_last_slot_arrival (__main__.FifoAcceptance.test_idle_and_last_slot_arrival) ... ERROR
+test_inputs_unchanged_and_repeatable (__main__.FifoAcceptance.test_inputs_unchanged_and_repeatable) ... ERROR
+test_partial_service_and_multiple_completions (__main__.FifoAcceptance.test_partial_service_and_multiple_completions) ... ERROR
+test_validation (__main__.FifoAcceptance.test_validation) ... 
+  test_validation (__main__.FifoAcceptance.test_validation) (c=None, a=[]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[], a=()) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[True], a=[[]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1.0], a=[[]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[None]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[False]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[1.5]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[['2']]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[-1], a=[[]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[0]]) ... ERROR
+  test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[-2]]) ... ERROR
+
+======================================================================
+ERROR: test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 52, in test_conservation_and_capacity_across_prefixes
+    r = simulate_fifo(c[:end], a[:end])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 52, in test_conservation_and_capacity_across_prefixes
+    r = simulate_fifo(c[:end], a[:end])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 52, in test_conservation_and_capacity_across_prefixes
+    r = simulate_fifo(c[:end], a[:end])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 52, in test_conservation_and_capacity_across_prefixes
+    r = simulate_fifo(c[:end], a[:end])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_conservation_and_capacity_across_prefixes (__main__.FifoAcceptance.test_conservation_and_capacity_across_prefixes) (end=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 52, in test_conservation_and_capacity_across_prefixes
+    r = simulate_fifo(c[:end], a[:end])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_empty (__main__.FifoAcceptance.test_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 27, in test_empty
+    self.assertEqual(simulate_fifo([], []),
+                     ~~~~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_fifo_does_not_overtake_large_packet (__main__.FifoAcceptance.test_fifo_does_not_overtake_large_packet)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 14, in test_fifo_does_not_overtake_large_packet
+    r = simulate_fifo([10, 1, 1], [[5, 1], [], []])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_idle_and_last_slot_arrival (__main__.FifoAcceptance.test_idle_and_last_slot_arrival)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 19, in test_idle_and_last_slot_arrival
+    self.assertEqual(simulate_fifo([9], [[2, 3]]),
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_inputs_unchanged_and_repeatable (__main__.FifoAcceptance.test_inputs_unchanged_and_repeatable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 44, in test_inputs_unchanged_and_repeatable
+    first = simulate_fifo(c, a)
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_partial_service_and_multiple_completions (__main__.FifoAcceptance.test_partial_service_and_multiple_completions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 9, in test_partial_service_and_multiple_completions
+    r = simulate_fifo([0, 2, 2, 3], [[3, 1], [], [2], []])
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=None, a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[], a=())
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[True], a=[[]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1.0], a=[[]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[None])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[False]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[1.5]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[['2']])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 36, in test_validation
+    with self.assertRaises(TypeError): simulate_fifo(c, a)
+                                       ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 39, in test_validation
+    with self.assertRaises(ValueError): simulate_fifo(c, a)
+                                        ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[-1], a=[[]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 39, in test_validation
+    with self.assertRaises(ValueError): simulate_fifo(c, a)
+                                        ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 39, in test_validation
+    with self.assertRaises(ValueError): simulate_fifo(c, a)
+                                        ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+======================================================================
+ERROR: test_validation (__main__.FifoAcceptance.test_validation) (c=[1], a=[[-2]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\test_acceptance.py", line 39, in test_validation
+    with self.assertRaises(ValueError): simulate_fifo(c, a)
+                                        ~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\02_fifo\student.py", line 16, in simulate_fifo
+    raise NotImplementedError("����ѧ����� FIFO ����ʵ��")
+NotImplementedError: ����ѧ����� FIFO ����ʵ��
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.019s
+
+FAILED (errors=22)

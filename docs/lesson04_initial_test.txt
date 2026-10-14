@@ -1,0 +1,197 @@
+test_nonzero_c_status_raises (__main__.BindingAcceptance.test_nonzero_c_status_raises) ... ok
+test_partial_and_pending (__main__.BindingAcceptance.test_partial_and_pending) ... ERROR
+test_real_c_call_and_signature (__main__.BindingAcceptance.test_real_c_call_and_signature) ... ERROR
+test_repeatability_inputs_and_path (__main__.BindingAcceptance.test_repeatability_inputs_and_path) ... ERROR
+test_uint32_limit_and_uint64_total (__main__.BindingAcceptance.test_uint32_limit_and_uint64_total) ... ERROR
+test_validation (__main__.BindingAcceptance.test_validation) ... 
+  test_validation (__main__.BindingAcceptance.test_validation) (c=None, a=[]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[], a=()) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[True], a=[0]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[False]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[1.0], a=[0]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=['1']) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[1], a=[]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[-1], a=[0]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[-1]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[4294967296], a=[0]) ... ERROR
+  test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[4294967296]) ... ERROR
+test_zero_and_empty (__main__.BindingAcceptance.test_zero_and_empty) ... ERROR
+
+======================================================================
+ERROR: test_partial_and_pending (__main__.BindingAcceptance.test_partial_and_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 30, in test_partial_and_pending
+    self.assertEqual(student.run_fifo([9,1,1], [5,1,0]),
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_real_c_call_and_signature (__main__.BindingAcceptance.test_real_c_call_and_signature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 18, in test_real_c_call_and_signature
+    r = student.run_fifo([0, 2, 2, 3], [3, 0, 2, 0])
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_repeatability_inputs_and_path (__main__.BindingAcceptance.test_repeatability_inputs_and_path)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 56, in test_repeatability_inputs_and_path
+    first = student.run_fifo(c,a)
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_uint32_limit_and_uint64_total (__main__.BindingAcceptance.test_uint32_limit_and_uint64_total)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 40, in test_uint32_limit_and_uint64_total
+    self.assertEqual(student.run_fifo([0,0,0], [m,m,1]),
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=None, a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[], a=())
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[True], a=[0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[False])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[1.0], a=[0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=['1'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 47, in test_validation
+    with self.assertRaises(TypeError): student.run_fifo(c,a)
+                                       ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[1], a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 50, in test_validation
+    with self.assertRaises(ValueError): student.run_fifo(c,a)
+                                        ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[-1], a=[0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 50, in test_validation
+    with self.assertRaises(ValueError): student.run_fifo(c,a)
+                                        ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[-1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 50, in test_validation
+    with self.assertRaises(ValueError): student.run_fifo(c,a)
+                                        ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[4294967296], a=[0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 50, in test_validation
+    with self.assertRaises(ValueError): student.run_fifo(c,a)
+                                        ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_validation (__main__.BindingAcceptance.test_validation) (c=[0], a=[4294967296])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 50, in test_validation
+    with self.assertRaises(ValueError): student.run_fifo(c,a)
+                                        ~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+======================================================================
+ERROR: test_zero_and_empty (__main__.BindingAcceptance.test_zero_and_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\test_acceptance.py", line 34, in test_zero_and_empty
+    self.assertEqual(student.run_fifo([], []), dict(served=[], backlog=[], delays=[], remaining=0))
+                     ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\04_ctypes\student.py", line 21, in run_fifo
+    raise NotImplementedError('����ѧ����� ctypes ���ò�')
+NotImplementedError: ����ѧ����� ctypes ���ò�
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.017s
+
+FAILED (errors=16)
