@@ -1,0 +1,746 @@
+test_bad_types (__main__.TrafficAcceptance.test_bad_types) ... 
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=1.5) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value='1') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value='0.5') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value=None) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value=True) ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value='0.5') ... ERROR
+  test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value=None) ... ERROR
+test_bad_values (__main__.TrafficAcceptance.test_bad_values) ... 
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'users': 0}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'users': -1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_slots': -1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_slots': -1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'recovery_slots': -1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'packet_size': 0}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'packet_size': 4294967296}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_slots': 0, 'burst_slots': 0, 'recovery_slots': 0}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': -0.1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': 1.1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': nan}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': inf}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': -inf}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': -0.1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': 1.1}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': nan}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': inf}) ... ERROR
+  test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': -inf}) ... ERROR
+test_bad_values (__main__.TrafficAcceptance.test_bad_values) ... ERROR
+test_global_rng_untouched (__main__.TrafficAcceptance.test_global_rng_untouched) ... ERROR
+test_independent_rows_and_bounds (__main__.TrafficAcceptance.test_independent_rows_and_bounds) ... ERROR
+test_phase_edges (__main__.TrafficAcceptance.test_phase_edges) ... ERROR
+test_seed_and_draw_order (__main__.TrafficAcceptance.test_seed_and_draw_order) ... ERROR
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='users', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_slots', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_slots', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='recovery_slots', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='packet_size', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='seed', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 46, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value='0.5')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='normal_p', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value='0.5')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_types (__main__.TrafficAcceptance.test_bad_types) (name='burst_p', value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 50, in test_bad_types
+    with self.assertRaises(TypeError): self.make(**{name:value})
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'users': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'users': -1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_slots': -1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_slots': -1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'recovery_slots': -1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'packet_size': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'packet_size': 4294967296})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_slots': 0, 'burst_slots': 0, 'recovery_slots': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': -0.1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': 1.1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': nan})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': inf})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'normal_p': -inf})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': -0.1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': 1.1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': nan})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': inf})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values) (change={'burst_p': -inf})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 61, in test_bad_values
+    with self.assertRaises(ValueError): self.make(**change)
+                                        ~~~~~~~~~^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_bad_values (__main__.TrafficAcceptance.test_bad_values)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 62, in test_bad_values
+    self.make(seed=-8)
+    ~~~~~~~~~^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_global_rng_untouched (__main__.TrafficAcceptance.test_global_rng_untouched)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 30, in test_global_rng_untouched
+    self.make(normal_p=0.3,burst_p=0.7)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_independent_rows_and_bounds (__main__.TrafficAcceptance.test_independent_rows_and_bounds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 34, in test_independent_rows_and_bounds
+    rows=self.make(normal_p=1,burst_p=1,packet_size=2**32-1)
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_phase_edges (__main__.TrafficAcceptance.test_phase_edges)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 13, in test_phase_edges
+    self.assertEqual(self.make(),[[0,0],[0,0],[3,3],[3,3],[3,3],[0,0],[0,0]])
+                     ~~~~~~~~~^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 10, in make
+    return generate_arrivals(**(BASE|changes))
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+======================================================================
+ERROR: test_seed_and_draw_order (__main__.TrafficAcceptance.test_seed_and_draw_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\test_acceptance.py", line 22, in test_seed_and_draw_order
+    self.assertEqual(generate_arrivals(**args),[[2,0],[0,2],[2,2]])
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\07_traffic\student.py", line 22, in generate_arrivals
+    raise NotImplementedError('����ѧ�����ҵ��������')
+NotImplementedError: ����ѧ�����ҵ��������
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.037s
+
+FAILED (errors=53)

@@ -1,0 +1,207 @@
+test_actual_c_call_and_errors (__main__.IntegrationAcceptance.test_actual_c_call_and_errors) ... ERROR
+test_all_idle_decay (__main__.IntegrationAcceptance.test_all_idle_decay) ... ERROR
+test_known_paths_and_history (__main__.IntegrationAcceptance.test_known_paths_and_history) ... ERROR
+test_policy_distinction (__main__.IntegrationAcceptance.test_policy_distinction) ... ERROR
+test_repeat_input_and_conservation (__main__.IntegrationAcceptance.test_repeat_input_and_conservation) ... ERROR
+test_validation (__main__.IntegrationAcceptance.test_validation) ... 
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=None, a=[]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[1], a=[[1]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[True]], a=[[0]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[[1.0]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[(1,)]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[], a=[]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[]], a=[[]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[1]], a=[]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[1], [1, 2]], a=[[0], [0]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[-1]], a=[[0]]) ... ERROR
+  test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[[4294967296]]) ... ERROR
+test_validation (__main__.IntegrationAcceptance.test_validation) ... ERROR
+
+======================================================================
+ERROR: test_actual_c_call_and_errors (__main__.IntegrationAcceptance.test_actual_c_call_and_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 88, in test_actual_c_call_and_errors
+    student.run_simulation(C,A)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_all_idle_decay (__main__.IntegrationAcceptance.test_all_idle_decay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 27, in test_all_idle_decay
+    r = student.run_simulation([[0,0]]*3,[[1,2],[0,0],[0,0]],p,0.5)
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_known_paths_and_history (__main__.IntegrationAcceptance.test_known_paths_and_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 13, in test_known_paths_and_history
+    rr = student.run_simulation(C,A,'rr',0.5)
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_policy_distinction (__main__.IntegrationAcceptance.test_policy_distinction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 36, in test_policy_distinction
+    self.assertEqual(student.run_simulation(c,a,'max_rate')['selected'][1],0)
+                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_repeat_input_and_conservation (__main__.IntegrationAcceptance.test_repeat_input_and_conservation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 60, in test_repeat_input_and_conservation
+    r=student.run_simulation(c,a,policy)
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=None, a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 42, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(c,a)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[1], a=[[1]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 42, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(c,a)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[True]], a=[[0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 42, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(c,a)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[[1.0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 42, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(c,a)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[(1,)])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 42, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(c,a)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[], a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[]], a=[[]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[1]], a=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[1], [1, 2]], a=[[0], [0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[-1]], a=[[0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation) (c=[[0]], a=[[4294967296]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 45, in test_validation
+    with self.assertRaises(ValueError): student.run_simulation(c,a)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+======================================================================
+ERROR: test_validation (__main__.IntegrationAcceptance.test_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\test_acceptance.py", line 46, in test_validation
+    with self.assertRaises(TypeError): student.run_simulation(C,A,policy=1)
+                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\06b_integration\student.py", line 22, in run_simulation
+    raise NotImplementedError('����ѧ����ɶ���԰�')
+NotImplementedError: ����ѧ����ɶ���԰�
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.020s
+
+FAILED (errors=17)

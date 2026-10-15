@@ -53,5 +53,12 @@ int main(void){
  memcpy(cc,c,sizeof c);memcpy(qq,q,sizeof q);memcpy(aa,at,sizeof at);
  CHECK(choose_user(3,2,c,q,at,&pick)==0);
  CHECK(memcmp(cc,c,sizeof c)==0 && memcmp(qq,q,sizeof q)==0 && memcmp(aa,at,sizeof at)==0);
+ /* 选中用户但实际发送0仍是合法输入，所有历史应正常衰减。 */
+ double zero_service[]={2,4,6};
+ CHECK(update_average(3,0.5,1,0,zero_service)==0);
+ CHECK(zero_service[0]==1 && zero_service[1]==2 && zero_service[2]==3);
+ CHECK(update_average(SIZE_MAX,0.5,0,0,at)==2);
+ CHECK(update_average(0,0.5,0,0,at)==1);
  puts("策略模块验收全部通过。");return 0;
 }
+

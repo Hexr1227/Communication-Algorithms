@@ -1,0 +1,55 @@
+lessons/06b_integration/student.c:4:28: warning: unused parameter 'users' [-Wunused-parameter]
+    4 | int simulate_policy(size_t users, size_t slots, unsigned policy, double alpha,
+      |                            ^
+lessons/06b_integration/student.c:4:42: warning: unused parameter 'slots' [-Wunused-parameter]
+    4 | int simulate_policy(size_t users, size_t slots, unsigned policy, double alpha,
+      |                                          ^
+lessons/06b_integration/student.c:4:58: warning: unused parameter 'policy' [-Wunused-parameter]
+    4 | int simulate_policy(size_t users, size_t slots, unsigned policy, double alpha,
+      |                                                          ^
+lessons/06b_integration/student.c:4:73: warning: unused parameter 'alpha' [-Wunused-parameter]
+    4 | int simulate_policy(size_t users, size_t slots, unsigned policy, double alpha,
+      |                                                                         ^
+lessons/06b_integration/student.c:5:21: warning: unused parameter 'capacities' [-Wunused-parameter]
+    5 |     const uint32_t *capacities, const uint32_t *arrivals,
+      |                     ^
+lessons/06b_integration/student.c:5:49: warning: unused parameter 'arrivals' [-Wunused-parameter]
+    5 |     const uint32_t *capacities, const uint32_t *arrivals,
+      |                                                 ^
+lessons/06b_integration/student.c:6:13: warning: unused parameter 'selected' [-Wunused-parameter]
+    6 |     size_t *selected, uint32_t *served, uint64_t *backlog,
+      |             ^
+lessons/06b_integration/student.c:6:33: warning: unused parameter 'served' [-Wunused-parameter]
+    6 |     size_t *selected, uint32_t *served, uint64_t *backlog,
+      |                                 ^
+lessons/06b_integration/student.c:6:51: warning: unused parameter 'backlog' [-Wunused-parameter]
+    6 |     size_t *selected, uint32_t *served, uint64_t *backlog,
+      |                                                   ^
+lessons/06b_integration/student.c:7:15: warning: unused parameter 'total_served' [-Wunused-parameter]
+    7 |     uint64_t *total_served, size_t *completed, uint64_t *remaining,
+      |               ^
+lessons/06b_integration/student.c:7:37: warning: unused parameter 'completed' [-Wunused-parameter]
+    7 |     uint64_t *total_served, size_t *completed, uint64_t *remaining,
+      |                                     ^
+lessons/06b_integration/student.c:7:58: warning: unused parameter 'remaining' [-Wunused-parameter]
+    7 |     uint64_t *total_served, size_t *completed, uint64_t *remaining,
+      |                                                          ^
+lessons/06b_integration/student.c:8:13: warning: unused parameter 'packet_time' [-Wunused-parameter]
+    8 |     size_t *packet_time, uint32_t *packet_left,
+      |             ^
+lessons/06b_integration/student.c:8:36: warning: unused parameter 'packet_left' [-Wunused-parameter]
+    8 |     size_t *packet_time, uint32_t *packet_left,
+      |                                    ^
+lessons/06b_integration/student.c:9:13: warning: unused parameter 'head' [-Wunused-parameter]
+    9 |     size_t *head, size_t *tail, uint64_t *queued, double *average) {
+      |             ^
+lessons/06b_integration/student.c:9:27: warning: unused parameter 'tail' [-Wunused-parameter]
+    9 |     size_t *head, size_t *tail, uint64_t *queued, double *average) {
+      |                           ^
+lessons/06b_integration/student.c:9:43: warning: unused parameter 'queued' [-Wunused-parameter]
+    9 |     size_t *head, size_t *tail, uint64_t *queued, double *average) {
+      |                                           ^
+lessons/06b_integration/student.c:9:59: warning: unused parameter 'average' [-Wunused-parameter]
+    9 |     size_t *head, size_t *tail, uint64_t *queued, double *average) {
+      |                                                           ^
+18 warnings generated.
