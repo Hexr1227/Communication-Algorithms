@@ -1,0 +1,27 @@
+test_configuration_and_single_generation (__main__.ScenarioAcceptance.test_configuration_and_single_generation) ... ERROR
+test_real_scene (__main__.ScenarioAcceptance.test_real_scene) ... ERROR
+
+======================================================================
+ERROR: test_configuration_and_single_generation (__main__.ScenarioAcceptance.test_configuration_and_single_generation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_scenario.py", line 33, in test_configuration_and_single_generation
+    result = scenario.run_demo(traffic_seed=21, channel_seed=32)
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\scenario.py", line 34, in run_demo
+    raise NotImplementedError('����ѧ����������������')
+NotImplementedError: ����ѧ����������������
+
+======================================================================
+ERROR: test_real_scene (__main__.ScenarioAcceptance.test_real_scene)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_scenario.py", line 9, in test_real_scene
+    before = scenario.run_demo()
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\scenario.py", line 34, in run_demo
+    raise NotImplementedError('����ѧ����������������')
+NotImplementedError: ����ѧ����������������
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+FAILED (errors=2)

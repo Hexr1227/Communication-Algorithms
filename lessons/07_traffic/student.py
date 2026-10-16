@@ -18,5 +18,37 @@ def generate_arrivals(*, users: int, normal_slots: int, burst_slots: int,
     不读取/改变全局随机状态；同参数同seed得到相同轨迹。
     类型错误抛TypeError；范围或总长度错误抛ValueError。
     """
-    # 待学生完成：完整参数校验、局部随机数源、阶段与到达轨迹生成。
-    raise NotImplementedError('请由学生完成业务生成器')
+    #完整参数校验、局部随机数源、阶段与到达轨迹生成。
+    if type(users) != int or type(packet_size) != int or type(normal_slots) != int \
+        or type(burst_slots) != int or type(recovery_slots) != int or (type(normal_p) != int and type(normal_p) != float) \
+        or (type(burst_p) != int and type(burst_p) != float) or type(seed) != int:
+        raise TypeError(f"输入类型错误")
+
+    if users <= 0 or packet_size <= 0 or packet_size > 2**32 - 1 or normal_slots < 0 or \
+        burst_slots < 0 or recovery_slots < 0 or (normal_slots + burst_slots + recovery_slots) <= 0\
+        or normal_p < 0 or normal_p > 1 or not math.isfinite(normal_p) or burst_p < 0 or burst_p > 1\
+        or not math.isfinite(burst_p):
+        raise ValueError(f"输入超出范围")
+
+    packet_matrix = []
+    rng = random.Random(seed)
+    slots_situations = normal_slots * [0] + burst_slots * [1] + recovery_slots * [0]
+
+    for slot, slot_situation in enumerate(slots_situations):
+        cur_packets = []
+        if slot_situation == 0:                     #正常和恢复
+            for user in range(users):
+                if rng.random() < normal_p:
+                    cur_packets.append(packet_size)
+                else:
+                    cur_packets.append(0)
+        elif slot_situation == 1:                   #突发
+            for user in range(users):
+                if rng.random() < burst_p:
+                    cur_packets.append(packet_size)
+                else:
+                    cur_packets.append(0)
+
+        packet_matrix.append(cur_packets)
+
+    return packet_matrix

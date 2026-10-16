@@ -1,0 +1,197 @@
+test_delay_hand_sample (__main__.MetricsAcceptance.test_delay_hand_sample) ... ERROR
+test_delay_validation (__main__.MetricsAcceptance.test_delay_validation) ... ERROR
+test_empty_samples (__main__.MetricsAcceptance.test_empty_samples) ... ERROR
+test_jain (__main__.MetricsAcceptance.test_jain) ... ERROR
+test_jain_validation (__main__.MetricsAcceptance.test_jain_validation) ... ERROR
+test_nearest_rank_and_input_unchanged (__main__.MetricsAcceptance.test_nearest_rank_and_input_unchanged) ... ERROR
+test_throughput (__main__.MetricsAcceptance.test_throughput) ... ERROR
+test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) ... 
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=None) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=(1, 2)) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[True]) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[1.0]) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=['1']) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[]) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[-1]) ... ERROR
+  test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[18446744073709551616]) ... ERROR
+test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) ... ERROR
+
+======================================================================
+ERROR: test_delay_hand_sample (__main__.MetricsAcceptance.test_delay_hand_sample)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 41, in test_delay_hand_sample
+    self.assertEqual(delay_summary([1, 2, 2, 5], 6),
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 42, in delay_summary
+    raise NotImplementedError('����ѧ��ʵ��ʱ��ͳ��')
+NotImplementedError: ����ѧ��ʵ��ʱ��ͳ��
+
+======================================================================
+ERROR: test_delay_validation (__main__.MetricsAcceptance.test_delay_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 69, in test_delay_validation
+    with self.assertRaises(TypeError): delay_summary(values, 1)
+                                       ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 42, in delay_summary
+    raise NotImplementedError('����ѧ��ʵ��ʱ��ͳ��')
+NotImplementedError: ����ѧ��ʵ��ʱ��ͳ��
+
+======================================================================
+ERROR: test_empty_samples (__main__.MetricsAcceptance.test_empty_samples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 60, in test_empty_samples
+    self.assertEqual(delay_summary([], 3),
+                     ~~~~~~~~~~~~~^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 42, in delay_summary
+    raise NotImplementedError('����ѧ��ʵ��ʱ��ͳ��')
+NotImplementedError: ����ѧ��ʵ��ʱ��ͳ��
+
+======================================================================
+ERROR: test_jain (__main__.MetricsAcceptance.test_jain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 26, in test_jain
+    self.assertAlmostEqual(jain_index([6, 2]), 0.8)
+                           ~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 25, in jain_index
+    raise NotImplementedError('����ѧ��ʵ�ֹ�ƽ��')
+NotImplementedError: ����ѧ��ʵ�ֹ�ƽ��
+
+======================================================================
+ERROR: test_jain_validation (__main__.MetricsAcceptance.test_jain_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 36, in test_jain_validation
+    with self.assertRaises(TypeError): jain_index(values)
+                                       ~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 25, in jain_index
+    raise NotImplementedError('����ѧ��ʵ�ֹ�ƽ��')
+NotImplementedError: ����ѧ��ʵ�ֹ�ƽ��
+
+======================================================================
+ERROR: test_nearest_rank_and_input_unchanged (__main__.MetricsAcceptance.test_nearest_rank_and_input_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 50, in test_nearest_rank_and_input_unchanged
+    result = delay_summary(values, 20)
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 42, in delay_summary
+    raise NotImplementedError('����ѧ��ʵ��ʱ��ͳ��')
+NotImplementedError: ����ѧ��ʵ��ʱ��ͳ��
+
+======================================================================
+ERROR: test_throughput (__main__.MetricsAcceptance.test_throughput)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 8, in test_throughput
+    self.assertEqual(throughput([6, 2], 4), 2.0)
+                     ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 16, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput(values, 1)
+                                       ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=(1, 2))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 16, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput(values, 1)
+                                       ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[True])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 16, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput(values, 1)
+                                       ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[1.0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 16, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput(values, 1)
+                                       ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=['1'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 16, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput(values, 1)
+                                       ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 19, in test_throughput_validation
+    with self.assertRaises(ValueError): throughput(values, 1)
+                                        ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[-1])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 19, in test_throughput_validation
+    with self.assertRaises(ValueError): throughput(values, 1)
+                                        ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation) (values=[18446744073709551616])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 19, in test_throughput_validation
+    with self.assertRaises(ValueError): throughput(values, 1)
+                                        ~~~~~~~~~~^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+======================================================================
+ERROR: test_throughput_validation (__main__.MetricsAcceptance.test_throughput_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_acceptance.py", line 21, in test_throughput_validation
+    with self.assertRaises(TypeError): throughput([1], slots)
+                                       ~~~~~~~~~~^^^^^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\student.py", line 13, in throughput
+    raise NotImplementedError('����ѧ��ʵ��������')
+NotImplementedError: ����ѧ��ʵ��������
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.012s
+
+FAILED (errors=16)

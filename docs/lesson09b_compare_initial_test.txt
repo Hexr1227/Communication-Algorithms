@@ -1,0 +1,39 @@
+test_partial_packet_and_no_arrivals (__main__.ComparisonAcceptance.test_partial_packet_and_no_arrivals) ... ERROR
+test_shared_inputs_and_existing_functions (__main__.ComparisonAcceptance.test_shared_inputs_and_existing_functions) ... ERROR
+test_small_scene (__main__.ComparisonAcceptance.test_small_scene) ... ERROR
+
+======================================================================
+ERROR: test_partial_packet_and_no_arrivals (__main__.ComparisonAcceptance.test_partial_packet_and_no_arrivals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_compare.py", line 32, in test_partial_packet_and_no_arrivals
+    rows = compare.compare_policies([[0],[7]], [[10],[0]])
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\compare.py", line 28, in compare_policies
+    raise NotImplementedError('����ѧ�����ʵ�����')
+NotImplementedError: ����ѧ�����ʵ�����
+
+======================================================================
+ERROR: test_shared_inputs_and_existing_functions (__main__.ComparisonAcceptance.test_shared_inputs_and_existing_functions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_compare.py", line 55, in test_shared_inputs_and_existing_functions
+    compare.compare_policies(c, a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\compare.py", line 28, in compare_policies
+    raise NotImplementedError('����ѧ�����ʵ�����')
+NotImplementedError: ����ѧ�����ʵ�����
+
+======================================================================
+ERROR: test_small_scene (__main__.ComparisonAcceptance.test_small_scene)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\test_compare.py", line 13, in test_small_scene
+    rows = compare.compare_policies(c, a)
+  File "E:\hw\wireless-scheduler\lessons\09b_metrics\compare.py", line 28, in compare_policies
+    raise NotImplementedError('����ѧ�����ʵ�����')
+NotImplementedError: ����ѧ�����ʵ�����
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.005s
+
+FAILED (errors=3)

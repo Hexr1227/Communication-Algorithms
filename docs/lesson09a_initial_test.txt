@@ -1,0 +1,174 @@
+test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) ... 
+  test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='rr') ... ERROR
+  test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='max_rate') ... ERROR
+  test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='pf') ... ERROR
+  test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='max_weight') ... ERROR
+test_hand_example (__main__.DelayAcceptance.test_hand_example) ... 
+  test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='rr') ... ERROR
+  test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='max_rate') ... ERROR
+  test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='pf') ... ERROR
+  test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='max_weight') ... ERROR
+test_multiple_completions_in_one_slot (__main__.DelayAcceptance.test_multiple_completions_in_one_slot) ... ERROR
+test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) ... 
+  test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[0], [0]], arrivals=[[1], [1]]) ... ERROR
+  test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[1], [1]], arrivals=[[3], [0]]) ... ERROR
+  test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[10]], arrivals=[[2]]) ... ERROR
+test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) ... ERROR
+test_preserved_validation (__main__.DelayAcceptance.test_preserved_validation) ... ERROR
+test_repeat_and_input_unchanged (__main__.DelayAcceptance.test_repeat_and_input_unchanged) ... ERROR
+
+======================================================================
+ERROR: test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='rr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 40, in test_four_policy_events
+    r = run_simulation([[2, 1]] * 4, a, policy, 0.5)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='max_rate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 40, in test_four_policy_events
+    r = run_simulation([[2, 1]] * 4, a, policy, 0.5)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='pf')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 40, in test_four_policy_events
+    r = run_simulation([[2, 1]] * 4, a, policy, 0.5)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_four_policy_events (__main__.DelayAcceptance.test_four_policy_events) (policy='max_weight')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 40, in test_four_policy_events
+    r = run_simulation([[2, 1]] * 4, a, policy, 0.5)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='rr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 22, in test_hand_example
+    r = run_simulation([[3]] * 4, arrivals, policy)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='max_rate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 22, in test_hand_example
+    r = run_simulation([[3]] * 4, arrivals, policy)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='pf')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 22, in test_hand_example
+    r = run_simulation([[3]] * 4, arrivals, policy)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_hand_example (__main__.DelayAcceptance.test_hand_example) (policy='max_weight')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 22, in test_hand_example
+    r = run_simulation([[3]] * 4, arrivals, policy)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_multiple_completions_in_one_slot (__main__.DelayAcceptance.test_multiple_completions_in_one_slot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 30, in test_multiple_completions_in_one_slot
+    r = run_simulation([[0], [0], [10]], [[2], [3], [0]])
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[0], [0]], arrivals=[[1], [1]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 56, in test_no_completion_and_last_arrival
+    r = run_simulation(c, a)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[1], [1]], arrivals=[[3], [0]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 56, in test_no_completion_and_last_arrival
+    r = run_simulation(c, a)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival) (capacities=[[10]], arrivals=[[2]])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 56, in test_no_completion_and_last_arrival
+    r = run_simulation(c, a)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_no_completion_and_last_arrival (__main__.DelayAcceptance.test_no_completion_and_last_arrival)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 61, in test_no_completion_and_last_arrival
+    r = run_simulation([[2], [2]], [[0], [0]])
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_preserved_validation (__main__.DelayAcceptance.test_preserved_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 74, in test_preserved_validation
+    run_simulation([], [])
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+======================================================================
+ERROR: test_repeat_and_input_unchanged (__main__.DelayAcceptance.test_repeat_and_input_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\test_acceptance.py", line 67, in test_repeat_and_input_unchanged
+    first = run_simulation(c, a)
+  File "E:\hw\wireless-scheduler\lessons\09a_delays\student.py", line 19, in run_simulation
+    raise NotImplementedError('����ѧ�����ʱ�������')
+NotImplementedError: ����ѧ�����ʱ�������
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.010s
+
+FAILED (errors=15)
